@@ -14,13 +14,15 @@ public class CryptCaesar {
     int shift = scanner.nextInt();
     int length = besked.length();
 
+    System.out.println("Krypteret besked: \n");
     for (int i = 0; i < length; i++) {
       if (besked.charAt(i) < 91) {
-        int lol = besked.charAt(i) + shift;
-        if (lol > 90) lol = lol - 26;
-        char lol2 = (char) lol;
-        System.out.print(lol2);
-      } else System.out.println("Only enter letters from A to Z!");
+        int krypteretbeskedital = besked.charAt(i) + shift;
+        if (krypteretbeskedital > 90) krypteretbeskedital = krypteretbeskedital - 26;
+        char krypteretbesked = (char) krypteretbeskedital;
+        System.out.print(krypteretbesked);
+      } else System.out.println("Skriv kun bogstaver fra A til Z");
     }
+    new vildufortsætte().start();
   }
 }
