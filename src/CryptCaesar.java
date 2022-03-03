@@ -15,13 +15,22 @@ public class CryptCaesar {
     int length = besked.length();
 
     System.out.println("Krypteret besked: \n");
+    String krypteretbesked="";
     for (int i = 0; i < length; i++) {
       if (besked.charAt(i) < 91) {
-        int krypteretbeskedital = besked.charAt(i) + shift;
-        if (krypteretbeskedital > 90) krypteretbeskedital = krypteretbeskedital - 26;
-        char krypteretbesked = (char) krypteretbeskedital;
-        System.out.print(krypteretbesked);
+        char krypteretbogstav = shiftmetode(besked.charAt(i),shift);
+        krypteretbesked+=krypteretbogstav;
+       // int krypteretbeskedital = besked.charAt(i) + shift;
+        //if (krypteretbeskedital > 90) krypteretbeskedital = krypteretbeskedital - 26;
+        //char krypteretbesked = (char) krypteretbeskedital;
       } else System.out.println("Skriv kun bogstaver fra A til Z");
     }
+    System.out.println("\n\nUden for loop: "+krypteretbesked);
+  }
+  char shiftmetode (char c,int shiftvalue){
+    int krypteretbeskedital = c + shiftvalue;
+    if (krypteretbeskedital > 90) krypteretbeskedital = krypteretbeskedital - 26;
+    char krypteretbesked = (char) krypteretbeskedital;
+    return krypteretbesked;
   }
 }
