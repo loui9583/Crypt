@@ -37,8 +37,5 @@ public class CryptVige {
       i++;
       k++;
     }
-    new vildufortsætte().start();
   }
-
-
 }

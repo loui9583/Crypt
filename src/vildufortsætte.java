@@ -9,11 +9,10 @@ public class vildufortsætte {
     fortsæt = fortsæt.toUpperCase();
     switch (fortsæt) {
       case "JA":
-        new Main().start();
         break;
       case "NEJ":
         System.out.println("Programmet lukkes.");
-
+        Main.loop=false;
     }
   }
 }

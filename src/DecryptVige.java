@@ -38,6 +38,5 @@ public class DecryptVige {
       i++;
       k++;
     }
-    new vildufortsætte().start();
   }
 }

@@ -23,6 +23,5 @@ public class CryptCaesar {
         System.out.print(krypteretbesked);
       } else System.out.println("Skriv kun bogstaver fra A til Z");
     }
-    new vildufortsætte().start();
   }
 }

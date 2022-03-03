@@ -23,6 +23,5 @@ public class DecryptCaesar {
         System.out.print(krypteretbesked);
       } else System.out.println("Skriv kun bogstaver fra A-Z!");
     }
-    new vildufortsætte().start();
   }
 }
